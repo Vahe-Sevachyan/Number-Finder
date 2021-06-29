@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="numberFinder.css">
+</head>
+<body>
+       <div class="wrapperDiv">
+            <div class="container">
+                <h1>Number Finder</h1>
+                <div class="difficultyContainer">
+                    <div class="difficultyLevels">
+                        <h3 class="begginer">Begginer</h3>
+                        <h3 class="levelNumber">1-100</h3>
+                    </div>
+                    <div class="difficultyLevels">
+                        <h3 class="intermediate">Intermediate</h3>
+                        <h3 class="levelNumber">1-500</h3>
+                    </div>
+                    <div class="difficultyLevels">
+                        <h3 class="advanced">Advanced</h3>
+                        <h3 class="levelNumber">1-1000</h3>
+                    </div>
+                    <div class="difficultyLevels">
+                        <h3 class="expert">Expert</h3>
+                        <h3 class="levelNumber">1-5000</h3>
+                    </div>
+                </div>
+                <div class="numberRange">
+                    <label for="RangeInputField" class="rangeLabel">Range Field</label>
+                    <input type="text" id="RangeInputField">
+                </div>
+                
+                <div class="guessField">
+                    <label for="guessInputField" class="guessLabel">Guess Field</label>
+                    <input type="text" id="guessInputField">
+                </div>
+                <div id="instructionsPrompt"></div>
+                <div id="lowOrHighMsg"></div>
+
+                <div id="previousAttemptsContainer">
+                    <div id="previousAttemptsHeader"></div>   
+                    <div id="previousAttemptsList"></div>
+                </div>
+                
+                <div id="guessAttemptsTrackerMsg"></div>
+                <button id="startButton">Start</button> <button id="restartButton">Restart</button>
+            </div>
+        </div>
+    <script src="numberFinder.js" ></script>
+</body>
+</html>
